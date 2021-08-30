@@ -11,6 +11,7 @@ import { useStateValue } from './contexto/store';
 import { obtenerUsuarioActual } from './actions/UsuarioAction';
 import RutaSegura from './componentes/navegacion/RutaSegura';
 import NuevoCurso from './componentes/cursos/NuevoCurso';
+import PaginadorCurso from './componentes/cursos/PaginadorCurso';
 
 
 function App() {
@@ -76,6 +77,11 @@ function App() {
                 exact
                 path="/curso/nuevo"
                 component={NuevoCurso}
+              />
+              <RutaSegura
+                exact
+                path="/curso/paginador"
+                component={PaginadorCurso}
               />
 
             </Switch>
